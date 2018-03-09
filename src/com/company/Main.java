@@ -36,7 +36,7 @@ public class Main {
         String answer2 = JOptionPane.showInputDialog(null, "Press 1 display your options");
         if(answer2.equals("a")){
             System.out.println("Coaches | teams");
-            String statement = "SELECT people.name, teams.name as teamnament FROM people INNER JOIN coaches On(people.id = people_id) INNER JOIN teams On(coaches.team_id = teams.id)";
+            String statement = "SELECT people.name, teams.name as team_name FROM people INNER JOIN coaches On(people.id = people_id) INNER JOIN teams On(coaches.team_id = teams.id)";
             getData(statement,2);
 
         }
